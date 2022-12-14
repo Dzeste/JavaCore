@@ -11,7 +11,7 @@ public class GameRunner {
         field.vivestiPole();
 
         System.out.println("Первые ходят \"Х\".");
-        while (logic.pobida==false){
+        while (logic.pobeda==false){
             logic.VvestiPole(field);
             System.out.println("Ход за "+"\"" +(logic.cheyHod()? "x":"o")+"\"");
         }

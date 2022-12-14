@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class GameLogic {
   private boolean xMove = true;
-  public boolean pobida = false;
+  public boolean pobeda = false;
   private final Scanner scanner = new Scanner(System.in);
 
   public boolean cheyHod() {
@@ -29,8 +29,8 @@ public class GameLogic {
           field.fields[i][j] = xMove ? "x" : "o";
           field.vivestiPole();
           if (proverkaPobeditelya(field)) {
-            pobida = true;
-            System.out.println("Ура побiда "+(this.cheyHod()? "x":"o"));
+            pobeda = true;
+            System.out.println("Ура победа "+(this.cheyHod()? "x":"o"));
           }
           xMove = !xMove;
           vvelikorretno = true;
